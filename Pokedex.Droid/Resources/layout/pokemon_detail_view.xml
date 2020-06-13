@@ -1,0 +1,115 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/pokemon_detailView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FFImageLoading.Cross.MvxCachedImageView
+        app:MvxBind="ImagePath Link"
+        android:layout_width="90dp"
+        android:layout_marginLeft="130dp"
+        android:layout_height="90dp"/>
+
+    
+      <View 
+           android:layout_width="match_parent"
+                android:layout_margin="10dp"
+           android:layout_height="2dp"       
+           android:background="#a399a1"/>
+    <TextView
+            android:text="Sprite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    <FFImageLoading.Cross.MvxCachedImageView
+        app:MvxBind="ImagePath Detail.Sprites.FrontDefault.AbsoluteUri"
+        
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+      <View 
+           android:layout_width="match_parent"
+                android:layout_margin="10dp"
+           android:layout_height="2dp"       
+           android:background="#a399a1"/>
+   
+
+    <TextView
+        app:MvxBind="Text Detail.Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+        <TextView
+            app:MvxBind="Text BaseExpString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+       
+        <TextView
+            app:MvxBind="Text HeightString"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            app:MvxBind="Text WeightString"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+          <View 
+           android:layout_width="match_parent"
+                android:layout_margin="10dp"
+           android:layout_height="2dp"       
+           android:background="#a399a1"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:MvxBind="Click ButtonAbilitiesClicked"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:id="@+id/btn_abilities"
+        android:text="Go Abilities"/>
+
+      <View 
+           android:layout_width="match_parent"
+                android:layout_margin="10dp"
+           android:layout_height="2dp"       
+           android:background="#a399a1"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:MvxBind="Click ButtonMovesClicked"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:id="@+id/btn_moves"
+        android:text="Go Moves"/>
+
+      <View 
+           android:layout_width="match_parent"
+                android:layout_margin="10dp"
+           android:layout_height="2dp"       
+           android:background="#a399a1"/>
+
+
+
+ 
+
+
+
+   <!-- <TextView
+        app:MvxBind="Text PokemonDetail.LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/> -->
+
+</LinearLayout>

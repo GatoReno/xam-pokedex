@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"    
+    android:layout_width="match_parent"
+    android:background="@color/material_grey_850"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        app:MvxBind="Text Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+    />
+
+        <TextView
+        app:MvxBind="Text Link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+    />
+
+    <FFImageLoading.Cross.MvxCachedImageView
+        app:MvxBind="ImagePath Link"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+</LinearLayout>
