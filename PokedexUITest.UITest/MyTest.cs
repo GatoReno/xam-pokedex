@@ -94,8 +94,8 @@ namespace PokedexUITest.UITest
 
             app.WaitForElement(pokemonMainView, $"unable to load {pokemonMainView} ", TimeSpan.FromSeconds(5), null, null);
 
-            app.Tap(c => c.Marked(Bulbasaur));
-            app.WaitForElement(PokemonDetailView, $"unable to load {PokemonDetailView} ", TimeSpan.FromSeconds(15), null, null);
+          //  app.Tap(c => c.Marked(Bulbasaur));
+          //  app.WaitForElement(PokemonDetailView, $"unable to load {PokemonDetailView} ", TimeSpan.FromSeconds(15), null, null);
 
 
             //Assert.IsTrue(isfav, "Hubo un error en vista Pokemon Favoritos");

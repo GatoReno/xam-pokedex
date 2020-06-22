@@ -9,6 +9,8 @@ using Pokedex.Core;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Firebase;
+using Firebase.Database;
 
 namespace Pokedex.Droid
 {
@@ -27,10 +29,22 @@ namespace Pokedex.Droid
             //intialize all plugins
             UserDialogs.Init(this);
 
+            //App Center
             AppCenter.Start("f382bc1a8a5f69e571cf99e9047f724a863c9581",
                    typeof(Analytics), typeof(Crashes));
-            AppCenter.Start("f382bc1a8a5f69e571cf99e9047f724a863c9581",
-                               typeof(Analytics), typeof(Crashes));
+
+
+            //Fire base
+            FirebaseApp.InitializeApp(this);
+
+            var i = FirebaseDatabase.Instance;
+            var tryme = i.GetReference("users");
+            var collection = Firebase.Firestore.FirebaseFirestore.Instance.Collection("users");
+            collection.
+            //FirebaseClient firebase = new FirebaseClient("https://xamarinfirebase-xxxxx.firebaseio.com/");
+            //tryme.LimitToLast(1);
+            // tryme.SetValue("first try");
+            tryme.OrderByValue();
         }
     }
 }

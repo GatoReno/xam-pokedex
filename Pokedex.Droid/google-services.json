@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "571766458905",
+    "firebase_url": "https://ethoaptivist.firebaseio.com",
+    "project_id": "ethoaptivist",
+    "storage_bucket": "ethoaptivist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571766458905:android:e7760c8c1a65fd1d3ff888",
+        "android_client_info": {
+          "package_name": "com.elevensource.pokedextraining.pokedex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571766458905-3ic0dgvpsm522ddj2hbk6um04ldtit26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elevensource.pokedextraining.pokedex",
+            "certificate_hash": "bbb2606743e597a05bd02501d3877df57d6be566"
+          }
+        },
+        {
+          "client_id": "571766458905-1q4evk7nmrji5peuhvsvf2d4e93ecrru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN_7eD7hkVcPq6tzLe8POXTsUiWIZqKf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571766458905-1q4evk7nmrji5peuhvsvf2d4e93ecrru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
